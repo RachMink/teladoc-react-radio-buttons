@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+.App {
+  font-family: "Roboto";
+  text-align: left;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 30px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+
+.radio-btn {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  display: grid;
+  overflow: hidden;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+.radio-btn .image{
+  position: absolute;
+  top: -5%;
+  right: -2%;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.radio-btn:hover {
+  outline: solid 1px blue;
+  cursor: pointer;
+}
+.radio-btn:focus{
+  background-color: grey;
+}
+.radio-btn input[type="radio"] {
+  /* instead of display:none we make the radio invisible so screen reader can still pick it up */
+  opacity: 0;
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  z-index : 1;
+}
+
+.radio-btn label{
+  margin-left: 0.5rem;
+  font-size: 14px;
+  width: calc(100% - 35px);
+}
+
+[role="radiogroup"]:focus {
+  outline: none;
+}
+
+.outlined{
+  outline: solid 1px blue;
+}
+
+.recommended {
+  color: blue;
+  font-size: 11px;
+  margin-left: 0.5rem;
+  margin-bottom: 0.4rem;
+  width: calc(100% - 35px);
+}
+
+.description {
+  margin-top: 0.4rem;
+  /* padding-top: 0.4rem; */
+  font-size: 11px;
+  font-weight: 400;
+}
+
+
